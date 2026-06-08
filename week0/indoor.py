@@ -7,6 +7,4 @@ outputs that same input in lowercase. Punctuation and whitespace should be outpu
 '''
 
 a = input("Enter a sentence: ")
-print("Your output in lower case is: " )
-b = a.lower()
-print(b)
+print("Your output in lower case is: ", b = a.lower())
