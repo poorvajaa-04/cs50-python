@@ -6,3 +6,16 @@ library's grid format. If the user does not specify exactly one command-line arg
 or if the specified file does not exist, the program should instead exit via sys.exit.
 
 '''
+
+from tabulate import tabulate
+import csv
+import sys
+
+if len(sys.argv) != 2 or not sys.argv[1].endswith(".csv"):
+    sys.exit("Invalid arguments.")
+
+try:
+    with open(sys.argv[1]) as file:
+        print(tabulate(csv.DictReader(file), headers="keys", tablefmt="grid"))
+except FileNotFoundError:
+    sys.exit("File does not exist.")
