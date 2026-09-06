@@ -1,6 +1,6 @@
 # 🔐 Password Strength Analyzer
 
-#### Video Demo: <YOUR VIDEO URL HERE>
+#### Video Demo: https://youtu.be/0KVOqrRXAzw
 
 #### Description:
 
